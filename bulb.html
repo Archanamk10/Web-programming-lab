@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+function light(sw)
+{
+  var pic;
+  if(sw==0)
+  {
+    pic="pic_lightoff.jpg"
+   }
+  else
+  {
+   pic="pic_lighton.jpg"
+   }
+  document.getElementById('myImage').src=pic;
+ }
+ </script>
+ <img id="myImage" src="pic_lightoff.png.jpg" width="400" height="350">
+ <p>
+ <button type="button" onclick="light(1)">Light On</button>
+ <button type="button" onclick="light(0)">Light Off</button>
+ </p>
+ </body>
+ </html>
